@@ -1,5 +1,14 @@
 name: FeedCommand
 version: '1.0.0'
 main: winlyps.feedCommand.FeedCommand
-api-version: '1.20'
+api-version: '1.16'
 authors: [ Winlyps ]
+commands:
+  feed:
+    description: Replenishes the player's hunger.
+    permission: feedcommand.use
+    usage: /feed
+permissions:
+  feedcommand.use:
+    description: Allows the player to use the /feed command.
+    default: op
